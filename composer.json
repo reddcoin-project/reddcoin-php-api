@@ -1,0 +1,35 @@
+{
+    "name": "indieblock/reddcoin-php-api",
+    "type": "library",
+    "description": "ReddCoin JSON-RPC client.",
+    "keywords": ["reddcoin","api","jsonrpc"],
+    "homepage": "https://github.com/reddcoin-project/reddcoin-php-api",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mathew Waller",
+            "email": "IndieBlock@reddcoin.solutions",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4" : {
+            "IndieBlock\\Reddcoin\\": "src"
+        },
+        "files" : [
+            "src/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4" : {
+            "IndieBlock\\Reddcoin\\Tests\\": "tests"
+        }
+    }
+}
